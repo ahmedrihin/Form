@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>PASSPORT APPLICATION -STAGE 1</h2>
+    <em style="color: red">Before filling up this online application form read the <a href="#">guidelines</a> carefully</em>
+    <p>Fields marked with <em style="color: red;">(*)</em> are mandatory</p>
+    <hr style="height: 2px; background-color: gray;">
+    
+    <form action="#" method="post">
+        <h3 style= "color: green;">Passport Application Information</h3>
+        <label for="aplyin">Applying <br>in <span style="color: red;">*</span></label>
+        <select name="Bangladesh" id="aplyin" style="width: 500px; margin-left: 100px;" required>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+        </select><br><br>
+        <label for="aplcn">Application Type:</label>
+        <span><b>NEW APPLICATION</b></span><br><br>
+        <label for="psprttype">Passport <br>Type <span style="color: red;">*</span></label>
+        <select name="psprttype" id="psprttype" style="margin-left: 80px;" required>
+            <option value="">-Select-</option>
+            <option value="New">New</option>
+            <option value="Old">Old</option>
+        </select><br><br>
+        <label for="dlvrytype">Delivery Type:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="dlvrytype" id="regular" value="Regular">
+        <label for="regular">Regular</label><br>
+        <input type="radio" name="dlvrytype" id="express" value="Express" style="margin-left: 125px;">
+        <label for="express">Express</label>
+
+        <!--Personal Information-->
+        <h3 style= "color: green;">Personal Information</h3>
+        <label for="nameofappl">Name of <br>Applicant: <span style="color: red;">*</span></label>
+        <input type="text" name="nameofappl" id="nameofappl" style="margin-left: 45px;" required><br><br>
+        <label for="fname">First Part <br>(Given Name):</label>
+        <input type="text" name="fname" id="fmane" style="margin-left: 30px;"><br><br>
+        <label for="lname">Second Part <br>(Surname): <span style="color: red;">*</span></label>
+        <input type="text" name="lname" id="lname" required style="margin-left: 42px;"><br><br>
+        <p>Guardian <input type="checkbox" name="tick" id="tick" required><label style="color: red;" for="tick">"Tick"</label> only if Applicant is legally adapted</p><br><br>
+        <label for="fathername">Father's <br>Name: <span style="color: red;">*</span></label>
+        <input type="text" name="fathername" id="fathername" required style="margin-left: 72px;"><br><br>
+        <label for="fnationality">Father's <br>Nationality <span style="color: red;">*</span></label>
+        <select name="fnationality" id="fnationality" required style="margin-left: 43px; width: 178px;">
+            <option value="Bangladesh">BANGLADESH</option>
+            <option value="India">INDIA</option>
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="china">CHINA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="Koria">KORIA</option>
+        </select><br><br>
+        <label for="fprofession">Father's <br>Profession: <span style="color: red;">*</span></label>
+        <select name="fprofession" id="fprofession" required style="margin-left:43px; width: 180px;">
+            <option value="">-SELECT-</option>
+            <option value="Businessman">BUSINESSMAN</option>
+            <option value="s.holder">SERVICE HOLDER</option>
+            <option value="banker">BANKER</option>
+            <option value="civil worker">CIVIL WORKER</option>
+            <option value="army">ARMY</option>
+        </select><br><br>
+        <label for="mothername">Mother's <br>Name: <span style="color: red;">*</span></label>
+        <input type="text" name="mothername" id="mothername" required style="margin-left: 72px;"><br><br>
+        <label for="mnationality">Mother's <br>Nationality <span style="color: red;">*</span></label>
+        <select name="mnationality" id="mnationality" required style="margin-left: 43px; width: 178px;">
+            <option value="Bangladesh">BANGLADESH</option>
+            <option value="India">INDIA</option>
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="china">CHINA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="Koria">KORIA</option>
+        </select><br><br>
+        <label for="mprofession">Mother's <br>Profession: <span style="color: red;">*</span></label>
+        <select name="mprofession" id="mprofession" required style="margin-left:43px; width: 180px;">
+            <option value="">-SELECT-</option>
+            <option value="Businessman">BUSINESSMAN</option>
+            <option value="s.holder">SERVICE HOLDER</option>
+            <option value="banker">BANKER</option>
+            <option value="civil worker">CIVIL WORKER</option>
+            <option value="army">ARMY</option>
+        </select><br><br>
+        <label for="spousename">Spouse's <br>Name:</label>
+        <input type="text" name="spousename" id="spousename" style="margin-left: 84px;"><br><br>
+        <label for="spnationality">Spouse's <br>Nationality:</label>
+        <select name="spnationality" id="spnationality" style="margin-left: 53px; width: 178px;">
+            <option value="Bangladesh">BANGLADESH</option>
+            <option value="India">INDIA</option>
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="china">CHINA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="Koria">KORIA</option>
+        </select><br><br>
+        <label for="spprofession">Spouse's <br>Profession:</label>
+        <select name="spprofession" id="spprofession" style="margin-left:57px; width: 180px;">
+            <option value="">-SELECT-</option>
+            <option value="Businessman">BUSINESSMAN</option>
+            <option value="s.holder">SERVICE HOLDER</option>
+            <option value="banker">BANKER</option>
+            <option value="civil worker">CIVIL WORKER</option>
+            <option value="army">ARMY</option>
+        </select><br><br>
+        <label for="mstatus">Marital <br>Status:<span style="color: red;">*</span></label>
+        <select name="mstatus" id="mstatus" required style="margin-left: 78px;">
+            <option value="">-SELECT-</option>
+            <option value="married">MARRIED</option>
+            <option value="single">SINGLE</option>
+        </select><br><br>
+        <label for="apliprofsn">Applicant's <br>Profession: <span style="color: red;">*</span></label>
+        <select name="apliprofsn" id="apliprofn" style="margin-left:46px; width: 180px;">
+            <option value="">-SELECT-</option>
+            <option value="Businessman">BUSINESSMAN</option>
+            <option value="s.holder">SERVICE HOLDER</option>
+            <option value="banker">BANKER</option>
+            <option value="civil worker">CIVIL WORKER</option>
+            <option value="army">ARMY</option>
+        </select><br><br>
+        <label for="cob">Country of <br>Birth:<span style="color: red;">*</span></label>
+        <select name="cob" id="cob" style="margin-left: 85px; width: 178px;" required>
+            <option value="Bangladesh">BANGLADESH</option>
+            <option value="India">INDIA</option>
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="china">CHINA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="Koria">KORIA</option>
+        </select><br><br>
+        <label for="birthdstct">Birth <br>District:<span style="color: red;">*</span></label>
+        <select name="cob" id="cob" style="margin-left: 70px; width: 178px;" required>
+            <option value="">-Select-</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Cumilla">Cumilla</option>
+            <option value="B-baria">B-Baria</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Rajshahi">Rajshahi</option>
+        </select><br><br>
+        <label for="dob">Date <br>Of Birth:<span style="color: red;">*</span></label>
+        <input type="date" name="dob" id="dob" required style="margin-left: 64px;width: 175px;"><br><br>
+        <label for="gender">Gender:<span style="color: red;">*</span></label>
+        <input type="radio" name="gender" id="male" value="Male" style="margin-left: 70px;" required><label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="Female" style="margin-left: 134px;" required><label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" value="Other" style="margin-left: 134px;" required><label for="other">Other</label><br><br>
+        <label for="birthid">Birth ID No.: <span style="color: red;">*</span></label>
+        <input type="number" name="birthid" id="birthid" style="margin-left: 32px;" required><br><br>
+        <label for="nid">National ID No.:</label>
+        <input type="number" name="nid" id="nid" style="margin-left: 22px;"><br><br>
+        <label for="taxid">Tax ID No.:</label>
+        <input type="number" name="taxid" id="taxid" style="margin-left: 53px;"><br><br>
+        <label for="height">Height: <span style="color: red;">*</span></label>
+        <input type="number" name="height" id="height" required  style="margin-left: 70px;"><label for="height">cm</label>
+        <input type="number" name="height" id="inch" required><label for="inch">inch</label><br><br>
+        <label for="religion">Religion:<span style="color: red;">*</span></label>
+        <select name="religion" id="religion" required style="margin-left: 62px;">
+            <option value="">-Select-</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Hindu">Hindu</option>
+            <option value="christian">Christian</option>
+            <option value="buddha">Buddha</option>
+        </select><br><br>
+        <label for="email">Email:<span style="color: red;">*</span></label>
+        <input type="email" name="email" id="email" required style="margin-left: 79px;"><br><br>
+
+
+        <!--Citizenship Information-->
+        <h3 style= "color: green;">Citizenship Information</h3>
+        <label for="nationality">Nationality:<span style="color: red;">*</span></label>
+        <input type="text" name="nationality" id="nationality" required style="margin-left: 45px;"><br><br>
+        <label for="ctznstus">Citizenship Status: <span style="color: red;">*</span></label>
+        <select name="ctznstus" id="ctznstus" required style="width: 174px;">
+            <option value="Birth">BIRTH</option>
+            <option value="Other">OTHER</option>
+        </select><br><br>
+        <label for="dualcitizen">Dual Citizenship:<span style="color: red;">*</span></label>
+        <input type="radio" name="dualcitizen" id="yes" value="Yes" required><label for="yes">YES</label>
+        <input type="radio" name="dualcitizen" id="no" value="No" required><label for="no">NO</label><br><br><br>
+
+
+        <!--Present Address-->
+        <h3 style= "color: green;">Present Address</h3>
+        <label for="vlg">Village/House:</label>
+        <input type="text" name="vlg" id="vlg" style="margin-left: 35px;"><br><br>
+        <label for="road">Road/Block:</label>
+        <input type="text" name="road" id="road" style="margin-left: 49px;"><br><br>
+        <label for="district">District: <span style="color: red;">*</span></label>
+        <select name="district" id="district" required style="margin-left: 66px; width: 178px;">
+            <option value="">-Select-</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Cumilla">Cumilla</option>
+            <option value="B-baria">B-Baria</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Rajshahi">Rajshahi</option>
+        </select><br><br>
+        <label for="plcstn">Police Station:<span style="color: red;">*</span></label>
+        <select name="plcstn" id="plcstn" required style="margin-left: 28px; width: 250px;">
+            <option value="">-Select-</option>
+            <option value="Pallabi">Pallabi</option>
+            <option value="Rupnogor">Rupnogor</option>
+            <option value="shah ali">Shah Ali</option>
+            <option value="kafrul">Kafrul</option>
+            <option value="uttara">Uttara</option>
+        </select><br><br>
+        <label for="postoffice">Post Office: <span style="color: red;">*</span></label>
+        <select name="postoffice" id="postoffice" required style="margin-left: 40px;">
+            <option value="">-Select-</option>
+            <option value="Pallabi">Pallabi</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="uttara">Uttara</option>
+            <option value="dhaka cantonment">Dhaka Cantonment</option>
+            <option value="khilkhet">Khilkhet</option>
+        </select>
+
+
+
+        <!--Permanent Address-->
+        <h3 style= "color: green;">Permanent Address</h3>
+        <br>
+        <input type="checkbox" name="same" id="same" value="same as above">
+        <label for="same">Same as above</label><br><br>
+        <label for="vlg">Village/House:</label>
+        <input type="text" name="vlg" id="vlg" style="margin-left: 35px;"><br><br>
+        <label for="road">Road/Block:</label>
+        <input type="text" name="road" id="road" style="margin-left: 49px;"><br><br>
+        <label for="district">District: <span style="color: red;">*</span></label>
+        <select name="district" id="district" required style="margin-left: 66px; width: 178px;">
+            <option value="">-Select-</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Cumilla">Cumilla</option>
+            <option value="B-baria">B-Baria</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Rajshahi">Rajshahi</option>
+        </select><br><br>
+        <label for="plcstn">Police Station:<span style="color: red;">*</span></label>
+        <select name="plcstn" id="plcstn" required style="margin-left: 28px; width: 250px;">
+            <option value="">-Select-</option>
+            <option value="Pallabi">Pallabi</option>
+            <option value="Rupnogor">Rupnogor</option>
+            <option value="shah ali">Shah Ali</option>
+            <option value="kafrul">Kafrul</option>
+            <option value="uttara">Uttara</option>
+        </select><br><br>
+        <label for="postoffice">Post Office: <span style="color: red;">*</span></label>
+        <select name="postoffice" id="postoffice" required style="margin-left: 40px;">
+            <option value="">-Select-</option>
+            <option value="Pallabi">Pallabi</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="uttara">Uttara</option>
+            <option value="dhaka cantonment">Dhaka Cantonment</option>
+            <option value="khilkhet">Khilkhet</option>
+        </select><br><br><br>
+        <input type="submit" value="SAVE & NEXT" style="float: right;">
+        <input type="submit" value="SAVE NOW AND CONTINUE IN THE FUTURE" style="float: right;">
+    </form>
+</body>
+</html>
